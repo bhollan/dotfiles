@@ -64,6 +64,7 @@ map <leader>c <C-_><C-_>
 "highlight bad/trailing whitespace
 highlight BadWhitespace ctermbg=red guibg=darkred
 au BufRead,BufNewFile *.py,*.pyw,*.c,*.h,*.rb match BadWhitespace /\s\+$/
+au BufNewFile,BufRead *.py set tabstop=4 softtabstop=4 shiftwidth=4 textwidth=119 expandtab autoindent fileformat=unix
 
 "set the scroll buffer (lines shown above/below cursor)
 set scrolloff=5
